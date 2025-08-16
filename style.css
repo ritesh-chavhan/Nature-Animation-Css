@@ -1,0 +1,703 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+html,
+body {
+   width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+   
+}
+body {
+  background: linear-gradient(to bottom, #87ceeb, #e0f6ff);
+}
+
+/* cloud circles */
+.cloud1 {
+  animation: slide 15s linear infinite;
+  position: absolute;
+}
+#c1,
+#c2,
+#c3,
+#c4,
+#c5 {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  background-color: #cce6ff;
+  position: absolute;
+}
+#c1 {
+  top: 3rem;
+  left: 7.2rem;
+}
+#c2 {
+  top: 3.3rem;
+  left: 1.2rem;
+}
+#c3 {
+  top: 0.6rem;
+  left: 1.8rem;
+}
+#c4 {
+  top: 0.6rem;
+  left: 4.8rem;
+}
+#c5 {
+  top: 3.6rem;
+  left: 4.2rem;
+}
+.cloud2 {
+  animation: slide 15s linear infinite;
+  position: absolute;
+}
+#ci1,
+#ci2,
+#ci3,
+#ci4,
+#ci5 {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  background-color: #cce6ff;
+  position: absolute;
+}
+#ci1 {
+  top: 3rem;
+  left: 22.8rem;
+}
+#ci2 {
+  top: 3.3rem;
+  left: 16.2rem;
+}
+#ci3 {
+  top: 0.6rem;
+  left: 20.4rem;
+}
+#ci4 {
+  top: 0.6rem;
+  left: 17.4rem;
+}
+#ci5 {
+  top: 3.6rem;
+  left: 19.2rem;
+}
+@keyframes slide {
+  from {
+    top: 0;
+    left: 0;
+  }
+  to {
+    left: 87rem;
+    top: 0;
+  }
+}
+.sun {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: orange;
+  border-radius: 50%;
+  box-shadow: 1px 1px 20px 6px orange;
+  position: absolute;
+  left: 0;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+@keyframes sunmove {
+  0% {
+    transform: translate(0vw, 0vh);
+  }
+  20% {
+    transform: translate(20vw, -20vh);
+  }
+  40% {
+    transform: translate(40vw, -35vh);
+  }
+  60% {
+    transform: translate(60vw, -35vh);
+  }
+  80% {
+    transform: translate(80vw, -20vh);
+  }
+  100% {
+    transform: translate(100vw, 0vh);
+  }
+}
+.moon {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: gray;
+  border-radius: 50%;
+  box-shadow: 1px 1px 20px 6px gray;
+  position: absolute;
+  left: 0;
+  top: 80%;
+  transform: translate(50%, 50%);
+  z-index: -2;
+}
+.ground {
+  width: 130rem;
+  height: 6rem;
+  background-color: green;
+  position: absolute;
+  top: 40rem;
+}
+.road {
+  width: 130rem;
+  height: 3.6rem;
+  background-color: black;
+  position: absolute;
+  top: 41rem;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-right: 1.2rem solid transparent;
+  border-bottom: 15rem solid black;
+  border-left: 1.2rem solid transparent;
+  position: absolute;
+  top: 25rem;
+  left: 14rem;
+  z-index: -2;
+}
+.fan1 {
+  width: 0;
+  height: 0;
+  border-top: 0.6rem solid transparent;
+  border-right: 12rem solid black;
+  border-bottom: 0.6rem solid transparent;
+  position: absolute;
+  top: 2.76rem;
+  left: -10.8rem;
+  z-index: -2;
+  transform: rotate(-30deg);
+}
+.fan2 {
+  width: 0;
+  height: 0;
+  border-right: 0.6rem solid transparent;
+  border-bottom: 12rem solid black;
+  border-left: 0.6rem solid transparent;
+  position: absolute;
+  top: -12rem;
+  left: 0rem;
+}
+.fan3 {
+  width: 0;
+  height: 0;
+  border-bottom: 0.6rem solid transparent;
+  border-left: 12rem solid black;
+  border-top: 0.6rem solid transparent;
+  position: absolute;
+  top: 2.4rem;
+  left: -0.6rem;
+  z-index: 1;
+  transform: rotate(30deg);
+}
+.rotate {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 25rem;
+  left: 14.7rem;
+  animation: spin 5s infinite linear;
+}
+.triangle2 {
+  width: 0;
+  height: 0;
+  border-right: 1.2rem solid transparent;
+  border-bottom: 15rem solid black;
+  border-left: 1.2rem solid transparent;
+  position: absolute;
+  top: 25rem;
+  left: 72rem;
+}
+.rotate1 {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 25rem;
+  left: 72.6rem;
+  animation: spin 5s infinite linear;
+}
+.fan4 {
+  width: 0;
+  height: 0;
+  border-top: 0.6rem solid transparent;
+  border-right: 12rem solid black;
+  border-bottom: 0.6rem solid transparent;
+  position: absolute;
+  top: 3rem;
+  left: -10.8rem;
+  transform: rotate(-30deg);
+}
+.fan5 {
+  width: 0;
+  height: 0;
+  border-right: 0.6rem solid transparent;
+  border-bottom: 12rem solid black;
+  border-left: 0.6rem solid transparent;
+  position: absolute;
+  top: -11.4rem;
+}
+.fan6 {
+  width: 0;
+  height: 0;
+  border-bottom: 0.6rem solid transparent;
+  border-left: 12rem solid black;
+  border-top: 0.6rem solid transparent;
+  position: absolute;
+  transform: rotate(30deg);
+  top: 2.88rem;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* home  */
+.home {
+  width: 15rem;
+  height: 5.4rem;
+  background-color: #a0512a;
+  border: 3px solid black;
+  position: absolute;
+  top: 34.6rem;
+  left: 36rem;
+}
+.door {
+  width: 3rem;
+  height: 4.2rem;
+  background-color: bisque;
+  position: absolute;
+  top: 0.7rem;
+  left: 6rem;
+}
+.slap {
+  width: 0;
+  height: 0;
+  border-right: 9rem solid transparent;
+  border-bottom: 9rem solid burlywood;
+  border-left: 9rem solid transparent;
+  position: absolute;
+  top: -9rem;
+  left: -1.68rem;
+  
+}
+.hole {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgb(0, 102, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: -4.8rem;
+  left: 6rem;
+  border: 3px solid white;
+}
+.hole::after {
+  content: "";
+  width: 0.42rem;
+  height: 0.42rem;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 6.9rem;
+  left: 0.18rem;
+}
+/* tree  */
+.tree {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: rgb(19, 199, 19);
+  border-radius: 50%;
+  position: absolute;
+  top: 31rem;
+  left: 26.22rem;
+  z-index: 1;
+}
+.tree::after {
+  content: "";
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: rgb(19, 199, 19);
+  border-radius: 50%;
+  position: absolute;
+  top: 1.8rem;
+  left: -1.2rem;
+}
+.tree::before {
+  content: "";
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: rgb(19, 199, 19);
+  border-radius: 50%;
+  position: absolute;
+  top: 1.8rem;
+  left: 1.2rem;
+}
+.trec {
+  width: 1.8rem;
+  height: 4.8rem;
+  background-color: #a0512a;
+  position: absolute;
+  top: 35.2rem;
+  left: 27rem;
+}
+/* tree 2  */
+.tree2 {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: rgb(19, 199, 19);
+  border-radius: 50%;
+  position: absolute;
+  top: 31rem;
+  left: 57rem;
+  z-index: 1;
+}
+.tree2::after {
+  content: "";
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: rgb(19, 199, 19);
+  border-radius: 50%;
+  position: absolute;
+  top: 1.8rem;
+  left: -1.2rem;
+}
+.tree2::before {
+  content: "";
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: rgb(19, 199, 19);
+  border-radius: 50%;
+  position: absolute;
+  top: 1.8rem;
+  left: 1.2rem;
+}
+.trec2 {
+  width: 1.8rem;
+  height: 4.8rem;
+  background-color: #a0512a;
+  position: absolute;
+  top: 35.2rem;
+  left: 57.9rem;
+}
+/* bird */
+.bird {
+  background: black;
+  border-radius: 50% 50% 20% 20%;
+  color: white;
+  width: 10.5px;
+  height: 10.5px;
+  position: absolute;
+  animation: bird-ani 0.8s linear infinite;
+  top: 9rem;
+  left: 3rem;
+}
+.bird::after,
+.bird::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.bird::after {
+  border-radius: 100% 100% 0 0;
+  box-shadow: inset 0px 5px 0 black;
+  width: 67px;
+  height: 67px;
+  margin-left: -33.5px;
+  transform-origin: 100% 0%;
+  animation: wing 3s linear infinite;
+}
+.bird::before {
+  background: #ffc37f;
+  border-radius: 100% 0% 20% 0%;
+  margin-top: 1.34px;
+  margin-left: -2.01px;
+  width: 4.02px;
+  height: 4.02px;
+  transform: rotate(45deg);
+}
+/* bird 2*/
+.bird2 {
+  background: black;
+  border-radius: 50% 50% 20% 20%;
+  color: white;
+  width: 10.05px;
+  height: 10.5px;
+  position: absolute;
+  animation: bird-ani 0.8s linear infinite;
+  top: 12rem;
+  left: 6rem;
+}
+.bird2::after,
+.bird2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.bird2::after {
+  border-radius: 100% 100% 0 0;
+  box-shadow: inset 0px 5px 0 black;
+  width: 67px;
+  height: 67px;
+  margin-left: -33.5px;
+  transform-origin: 100% 0%;
+  animation: wing 3s linear infinite;
+}
+.bird2::before {
+  background: #ffc37f;
+  border-radius: 100% 0% 20% 0%;
+  margin-top: 1.34px;
+  margin-left: -2.01x;
+  width: 4.02px;
+  height: 4.02px;
+  transform: rotate(45deg);
+}
+@keyframes wing {
+  50% {
+    transform: rotateX(-1440deg);
+  }
+}
+body {
+  animation: skychange 20s linear infinite;
+}
+
+@keyframes skychange {
+  0% {
+    background: linear-gradient(to bottom, #87ceeb, #e0f6ff);
+  } /* Day */
+  40% {
+    background: linear-gradient(to bottom, #87ceeb, #e0f6ff);
+  } /* Day */
+  50% {
+    background: linear-gradient(to bottom, #001848, #0a043c);
+  } /* Night starts */
+  90% {
+    background: linear-gradient(to bottom, #001848, #0a043c);
+  } /* Night */
+  100% {
+    background: linear-gradient(to bottom, #87ceeb, #e0f6ff);
+  } /* Back to Day */
+}
+
+/* Sun visible in day only */
+.sun {
+  animation: sunmove 10s linear infinite, sunfade 20s linear infinite;
+}
+
+@keyframes sunfade {
+  0%,
+  40% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Moon visible in night only */
+.moon {
+  animation: sunmove 10s linear infinite, moonfade 20s linear infinite;
+  animation-delay: 10s, 0s; /* movement delay for moon */
+}
+
+@keyframes moonfade {
+  0%,
+  40% {
+    opacity: 0;
+  }
+  50%,
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* lamp */
+.lamp {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 34.6rem;
+  left: 21rem;
+  animation: lamponoff 20s infinite 6s;
+  z-index: -1;
+}
+.lamproad {
+  width: 0.6rem;
+  height: 4.2rem;
+  border-radius: 30%;
+  background-color: black;
+  position: absolute;
+  top: 35.8rem;
+  left: 21.3rem;
+}
+
+.lamp1 {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 34.6rem;
+  left: 66rem;
+  animation: lamponoff 20s infinite 6s;
+  z-index: -1;
+}
+.lamproad1 {
+  width: 0.6rem;
+  height: 4.2rem;
+  border-radius: 30%;
+  background-color: black;
+  position: absolute;
+  top: 35.8rem;
+  left: 66.3rem;
+}
+@keyframes lamponoff {
+  0% {
+    background-color: white;
+  }
+  70% {
+    background-color: yellow;
+    box-shadow: 2px 2px 5px 5px yellow;
+  }
+  75% {
+    background-color: white;
+  }
+  80% {
+    background-color: white;
+  }
+  100% {
+    background-color: white;
+  }
+}
+.chimnay {
+  width: 1.8rem;
+  height: 3.6rem;
+  background-color: burlywood;
+  position: absolute;
+  top: 27.5rem;
+  left: 46.8em;
+}
+.chimnay::after {
+  content: "";
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: rgba(120, 120, 120, 0.25);
+  border-radius: 50%;
+  position: absolute;
+  top: -1.56rem;
+  animation: fade 1s linear infinite 1s;
+}
+.chimnay::before {
+  content: "";
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: rgba(120, 120, 120, 0.25);
+  border-radius: 50%;
+  position: absolute;
+  top: -2.4rem;
+  left: 0.6rem;
+  animation: fade 1s linear infinite 1.2s;
+}
+.circle {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: rgba(120, 120, 120, 0.25);
+  border-radius: 50%;
+  position: absolute;
+  top: 24rem;
+  left: 48rem;
+  animation: fade 1s linear infinite 1.4s;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 0.65;
+  }
+  55% {
+    opacity: 0.35;
+  }
+  100% {
+    opacity: 0;
+  }
+}  
+.mountain{
+  width: 0;
+  height: 0;
+  border-right: 6rem solid transparent;
+  border-bottom: 6rem solid rgb(107, 205, 50);
+  border-left: 6rem solid transparent;
+  border-radius: 5px;
+  position: absolute;
+  top: 34rem;
+  left: 80rem;
+}
+.mountain::after{
+  content: "";
+   width: 0;
+  height: 0;
+  border-right: 6rem solid transparent;
+  border-bottom: 6rem solid rgb(107, 205, 50);
+  border-left: 6rem solid transparent;
+  border-radius: 5px;
+  z-index: -1;
+  position: absolute;
+}
+/* road crossing  */
+.road1{
+  width: 20rem;
+  height: 0.5rem;
+  background-color: white;
+  position: absolute;
+  top: 42.5rem; 
+   opacity: 0.8;
+}
+.road2{
+  width: 20rem;
+  height: 0.5rem;
+  background-color: white;
+  position: absolute;
+  top: 42.5rem;
+  left: 25rem;
+   opacity: 0.8;
+}
+.road3{
+  width: 20rem;
+  height: 0.5rem;
+  background-color: white;
+  position: absolute;
+  top: 42.5rem;
+  left: 50rem;
+   opacity: 0.8;
+}
+.road4{
+  width: 25rem;
+  height: 0.5rem;
+  background-color: white;
+  position: absolute;
+  top: 42.5rem;
+  left: 75rem;
+  opacity: 0.8;
+}
